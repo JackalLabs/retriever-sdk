@@ -1,4 +1,4 @@
-const names = require("./index");
+const names = require("./src");
 
 
 function main() {
