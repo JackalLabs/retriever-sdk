@@ -1,4 +1,4 @@
-![Retriever Banner](https://raw.githubusercontent.com/JACKAL-DAO/Retriever/main/banner.png)
+![Retriever Banner](https://raw.githubusercontent.com/JACKAL-DAO/Retriever/master/banner.png)
 
 # Retriever
 
