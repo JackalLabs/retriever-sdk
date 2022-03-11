@@ -7,7 +7,7 @@ Not to be confused with RNS itself. That is a dApp on the JUNO Network which can
 
 ## Installation
 ```
-npm install retriever
+npm install (retriever) *package name pending*
 ```
 
 ## Use
