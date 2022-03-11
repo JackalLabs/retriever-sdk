@@ -14,7 +14,7 @@ npm install retriever
 
 Retriever will use data from the RNS contract to resolve the name. In this example we assume `jackal.rns` is a name already registered with RNS.
 
-### resolveName(name: string, prefix: string, contractAddress: string <Optional>)
+### resolveName(name: string, prefix: string, contractAddress: string *optional*)
 #### name 
 The name you wish to resolve without the suffix of `.rns`. For example resolving `jackal.rns` would require `jackal` in the name field.
 #### prefix
