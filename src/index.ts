@@ -51,4 +51,4 @@ export function getHex (address: string): string {
 }
 
 
-export default { getAddress, getHex }
+export default { getAddress, getHex, resolveName }
