@@ -14,11 +14,13 @@ npm install retriever
 
 Retriever will use data from the RNS contract to resolve the name. In this example we assume `jackal.rns` is a name already registered with RNS.
 
-### resolveName(name: string, prefix: string)
+### resolveName(name: string, prefix: string, contractAddress: string <Optional>)
 #### name 
 The name you wish to resolve without the suffix of `.rns`. For example resolving `jackal.rns` would require `jackal` in the name field.
 #### prefix
 The network you wish to resolve from. Every cosmos address starts with its' own prefix. For example, Juno uses `juno`, Secret uses `secret` and Osmosis uses `osmo`.
+#### contractAddress 
+Overrides default contract address to query from.
 
 ### Example use-case
 ```javascript
