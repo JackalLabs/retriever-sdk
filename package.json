@@ -19,6 +19,7 @@
   "author": "Marston Connell <marston.ian.connell@gmail.com>",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.27.1",
     "@cosmjs/encoding": "^0.27.1"
   },
   "devDependencies": {

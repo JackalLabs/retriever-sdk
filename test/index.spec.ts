@@ -1,5 +1,5 @@
 import { expect } from '@jest/globals'
-import { getHex, getAddress } from '../src'
+import { getHex, getAddress, resolveName } from '../src'
 
 const testAddr = 'secret1znrwfg0x55dp2s353m2qx90cxm3zslxe7fcxme'
 
@@ -10,4 +10,16 @@ test('should parse testAddr to hex string', () => {
 
 test('should parse testAddr to jackal address', () => {
     expect(getAddress('jackal', getHex(testAddr))).toEqual('jackal1znrwfg0x55dp2s353m2qx90cxm3zslxed7rev9')
+})
+
+test('should parse marston to jackal address', () => {
+    
+    resolveName("marston", "jackal").then((res) => {
+        console.log(res);
+        console.log('\n');
+        expect("e").toEqual("e");
+    }).catch((err) => {
+        console.log(err);
+    })
+    // expect(getAddress('jackal', getHex(testAddr))).toEqual('jackal1znrwfg0x55dp2s353m2qx90cxm3zslxed7rev9')
 })
