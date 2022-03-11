@@ -1,9 +1,9 @@
 import { Bech32, fromHex, toHex } from '@cosmjs/encoding'
 import { SigningCosmWasmClient } from '@cosmjs/cosmwasm-stargate'
 
-export function resolveName (name: string, prefix: string, contractAddress: string = "juno1qr76sfjnr40xulzlymm2ehx5wxwv8pyqnlah5smqtnfrq446guvs42xc6l"): Promise<string> {
+export function resolveName (name: string, prefix: string, contractAddress: string = "juno1qr76sfjnr40xulzlymm2ehx5wxwv8pyqnlah5smqtnfrq446guvs42xc6l", rpc: string = "https://rpc.uni.junomint.com:443/"): Promise<string> {
     return new Promise((resolve, reject) => {
-        SigningCosmWasmClient.connect("https://rpc.uni.junomint.com:443/").then((client) => {
+        SigningCosmWasmClient.connect(rpc).then((client) => {
 
 
             const msg = { resolve_attributes: { name: name } }
